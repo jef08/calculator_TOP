@@ -1,0 +1,116 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: fantasy;
+    font-weight: 600;
+    color: rgb(97, 45, 0)
+}
+
+.calculator {
+    background-color: rgb(67, 45, 0);
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+}
+
+.display {
+    background-color: rgb(254, 231, 214);
+    height: 100px;
+    width: 350px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(39, 25, 0);
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-grow: 1;
+    gap: 8px;
+    justify-content: center;
+}
+
+.equals {
+    width: 168px
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+    background-color: rgb(254, 231, 214);
+    color: rgb(51, 33, 0);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 200, 161);
+}
+
+button:active {
+    background-color: rgb(210, 146, 100);
+    transform: translateY(4px);
+}
+
+.operator,
+.equals {
+    background-color: rgb(234, 163, 31);
+}
+
+.operator:hover,
+.equals:hover {
+    background-color: rgb(234, 186, 95)
+}
+
+.operator:active,
+.equals:active {
+    background-color: rgb(160, 125, 58);
+}
+
+.clear,
+.back,
+.positiveNegative {
+    background-color: rgb(254, 125, 39);
+}
+
+.clear:hover,
+.back:hover,
+.positiveNegative:hover {
+    background-color: rgb(255, 160, 96);
+}
+
+.clear:active,
+.back:active,
+.positiveNegative:active {
+    background-color: rgb(179, 99, 45);
+}
